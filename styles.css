@@ -3,24 +3,29 @@ html{
   font-size: 16px;
   border-radius: 5px;
   /* overflow: hidden; */
-  width: 800px;
-  height: 600px;
+  padding-top: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .divOne{
   background-color: #FCFBFF;
   padding: 40px;
   place-content: center;
-  height: 31%;
+  
 }
 
 .mainDiv{
-  align-items: center !important;
-  justify-content: center;
-  background-color: #E6EFF6;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 5px 5px 5px rgba(40, 6, 119, 0.1);
+  width: 100%;
+  max-width: 800px;
+  
 }
 
 .h2Tit{
@@ -48,7 +53,8 @@ p{
 .subsDiv{
   display: flex;
   flex-direction: row;
-  width: 100%
+  width: 100%;
+  justify-content: space-between;
 }
 
 .divLeft{
@@ -132,3 +138,20 @@ p{
   color: #606060;
   opacity: 60%
 }
+ /* from pc to mobile */
+@media (max-width: 580px) {
+  .subsDiv {
+    flex-direction: column;
+  }
+  .h2Tit, .h3{
+    padding-bottom: 10px;
+  }
+  #white{
+    color: white;
+  }
+
+  .divLeft, .divRight{
+    flex: 100%;
+    text-align: start;
+  }
+} 
