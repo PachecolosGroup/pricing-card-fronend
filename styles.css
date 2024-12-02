@@ -143,6 +143,12 @@ p{
   .subsDiv {
     flex-direction: column;
   }
+  .h2Tit, .h3{
+    padding-bottom: 10px;
+  }
+  #white{
+    color: white;
+  }
 
   .divLeft, .divRight{
     flex: 100%;
