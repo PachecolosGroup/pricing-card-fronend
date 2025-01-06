@@ -22,10 +22,10 @@ html{
 .mainDiv{
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(40, 6, 119, 0.1);
+  box-shadow: -1px 10px 59px -24px rgba(26,128,125,1);
   width: 100%;
   max-width: 800px;
-  
+  margin: auto;
 }
 
 .h2Tit{
